@@ -17,7 +17,10 @@
 
 .date-label {
   font-size: 1.2em;
-  color: #b3b3b3;
+  font-weight: bold;
+  /* Aumenta o peso da fonte */
+  color: #1ed760;
+  /* Verde claro do Spotify */
   margin-right: 20px;
 }
 
@@ -46,4 +49,9 @@
 .icon-minoxidil,
 .icon-english {
   margin-right: 5px;
+}
+
+.today {
+  /* Uma cor verde mais clara, semelhante ao Spotify */
+  background-color: #3a85b3;
 }

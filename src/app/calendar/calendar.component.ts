@@ -35,4 +35,9 @@ export class CalendarComponent implements OnInit {
     return this.habitsService.checkHabit(habit, date);
   }
 
+  isToday(date: string): boolean {
+    const today = new Date().toISOString().split('T')[0];
+    return date === today;
+  }
+
 }

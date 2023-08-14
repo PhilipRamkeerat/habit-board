@@ -1,9 +1,10 @@
 <div
   class="habit-container"
   *ngFor="let date of dates"
+  [class.today]="isToday(date)"
 >
   <div class="date-section">
-    <span class="date-label">{{date}}</span>
+    <span class="date-label">{{ date | date:'d/MM':'':'pt' }}</span>
 
     <button
       class="habit-button"
