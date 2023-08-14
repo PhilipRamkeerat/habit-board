@@ -1,0 +1,30 @@
+.habit-container {
+  padding: 10px;
+  border-bottom: 1px solid #282828;
+}
+
+.date-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.habit-button {
+  background-color: #b3b3b3;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  color: #181818;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.habit-button:hover {
+  background-color: #1ed760;
+}
+
+.habit-button.active {
+  background-color: #4CAF50;
+  color: #181818;
+}

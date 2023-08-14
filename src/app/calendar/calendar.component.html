@@ -1,0 +1,20 @@
+<div
+  class="habit-container"
+  *ngFor="let date of dates"
+>
+  <div class="date-label">
+    {{date}}
+
+    <button
+      class="habit-button"
+      (click)="mark('minoxidil', date)"
+      [class.active]="check('minoxidil', date)"
+    >Minoxidil</button>
+
+    <button
+      class="habit-button"
+      (click)="mark('english', date)"
+      [class.active]="check('english', date)"
+    >English</button>
+  </div>
+</div>
