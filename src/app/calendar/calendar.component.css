@@ -1,30 +1,47 @@
 .habit-container {
-  padding: 10px;
-  border-bottom: 1px solid #282828;
+  padding: 15px;
+  border-bottom: 2px solid #333;
+  background-color: #222;
+  transition: background-color 0.3s;
 }
 
-.date-label {
+.habit-container:hover {
+  background-color: #2a2a2a;
+}
+
+.date-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.date-label {
+  font-size: 1.2em;
+  color: #b3b3b3;
+  margin-right: 20px;
+}
+
 .habit-button {
-  background-color: #b3b3b3;
+  background-color: #555;
   border: none;
   border-radius: 25px;
   padding: 10px 20px;
   margin-left: 10px;
-  color: #181818;
+  color: #fff;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .habit-button:hover {
   background-color: #1ed760;
+  transform: scale(1.05);
 }
 
 .habit-button.active {
   background-color: #4CAF50;
-  color: #181818;
+}
+
+.icon-minoxidil,
+.icon-english {
+  margin-right: 5px;
 }

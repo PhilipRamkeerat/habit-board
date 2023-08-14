@@ -2,19 +2,25 @@
   class="habit-container"
   *ngFor="let date of dates"
 >
-  <div class="date-label">
-    {{date}}
+  <div class="date-section">
+    <span class="date-label">{{date}}</span>
 
     <button
       class="habit-button"
       (click)="mark('minoxidil', date)"
       [class.active]="check('minoxidil', date)"
-    >Minoxidil</button>
+      title="Mark Minoxidil"
+    >
+      <i class="fa fa-medkit"></i> Minoxidil
+    </button>
 
     <button
       class="habit-button"
       (click)="mark('english', date)"
       [class.active]="check('english', date)"
-    >English</button>
+      title="Mark English Study"
+    >
+      <i class="fa fa-book"></i> English
+    </button>
   </div>
 </div>
