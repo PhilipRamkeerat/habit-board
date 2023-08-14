@@ -3,19 +3,18 @@
   border-bottom: 2px solid #333;
   background-color: #222;
   transition: background-color 0.3s;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 .habit-container:hover {
   background-color: #2a2a2a;
 }
 
-
 .date-section {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
-
 
 .date-label {
   font-size: 1.2em;
@@ -23,9 +22,8 @@
   color: #1ed760;
   margin-right: 20px;
   min-width: 60px;
-  /* Defina uma largura mínima adequada para a data */
-  /* Alinha o texto à direita para manter a consistência */
   text-align: right;
+  flex-shrink: 0;
 }
 
 .habit-button {
@@ -37,6 +35,7 @@
   color: #fff;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
+  flex-shrink: 0;
 }
 
 @media (hover: hover) {
