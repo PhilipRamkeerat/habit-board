@@ -32,9 +32,11 @@
   transition: background-color 0.3s, transform 0.2s;
 }
 
-.habit-button:hover {
-  background-color: #1ed760;
-  transform: scale(1.05);
+@media (hover: hover) {
+  .habit-button:hover {
+    background-color: #1ed760;
+    transform: scale(1.05);
+  }
 }
 
 .habit-button.active {

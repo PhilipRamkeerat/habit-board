@@ -32,7 +32,6 @@ export class CalendarComponent implements OnInit {
   }
 
   check(habit: 'minoxidil' | 'english', date: string): boolean {
-    console.log('check logger', this.habitsService.checkHabit(habit, date));
     return this.habitsService.checkHabit(habit, date);
   }
 
